@@ -1,0 +1,35 @@
+input {
+    border: 1px solid rgba(134, 146, 166, 1);
+    border-radius: 6px;
+    width: 426px;
+    height: 64px;
+    padding: 0 30px;
+}
+
+input[type="submit"] {
+    background-color: rgba(21, 101, 216, 1);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s linear;
+
+    &:hover {
+        background-color: rgba(31, 131, 226, 1);
+    }
+
+}
+
+
+
+@media (max-width: 560px) {
+    input {
+        width: 320px;
+
+        height: 45px;
+    }
+}
+
+::placeholder {
+    color: rgba(134, 146, 166, 1);
+    font-weight: 500;
+    font-size: 14px;
+}

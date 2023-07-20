@@ -1,0 +1,220 @@
+@font-face {
+  font-family: Gayathri;
+  src: url(../../../public/assets/fonts/Gayathri-Bold.ttf);
+}
+.signup {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+.signup .left {
+  position: relative;
+  width: 660px;
+  height: 100vh;
+  background: url(../../../public/assets/images/main\ bg.svg) center bottom no-repeat;
+  background-size: cover;
+}
+.signup .left .overlay {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 160px;
+  padding: 61px 89px;
+}
+.signup .left .overlay .content {
+  text-align: left;
+  position: relative;
+  width: 470px;
+}
+.signup .left .overlay .content .qut {
+  position: absolute;
+  top: -25px;
+  left: 10px;
+  font-size: 96px;
+  font-family: Gayathri;
+  color: rgb(0, 218, 247);
+}
+.signup .left .overlay .content::after {
+  content: "";
+  border-width: 8px 20px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: -145px;
+  right: 40px;
+}
+.signup .left .overlay .content::before {
+  content: "";
+  position: absolute;
+  border-width: 12px 8px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  bottom: -130px;
+  right: 40px;
+}
+.signup .login-form {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% - 660px);
+  gap: 50px;
+  padding: 150px 0 75px 0;
+}
+.signup .login-form .header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+  position: relative;
+}
+.signup .login-form .header .backBtn {
+  display: flex;
+  gap: 25px;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+}
+.signup .login-form .header .t__body2 {
+  width: 350px;
+}
+.signup .login-form .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.signup .login-form .form form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  position: relative;
+}
+.signup .login-form .form form .form-group i {
+  position: absolute;
+  top: 50px;
+  right: 25px;
+}
+.signup .login-form .form form .form-group a {
+  text-decoration: none;
+  width: 426px;
+  height: 64px;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  text-align: center;
+  line-height: 64px;
+  cursor: pointer;
+  border: 0;
+  transition: 0.3s linear;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.08);
+}
+.signup .login-form .form form .form-group a:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.08);
+}
+.signup .login-form .form form .form-checkbox label {
+  font-weight: 500;
+  color: rgb(105, 111, 121);
+  font-size: 16px;
+  line-height: 19.36px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  text-align: left;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.signup .login-form .form form .form-checkbox label input {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 1000px) {
+  .signup {
+    flex-direction: column;
+    height: auto;
+  }
+  .signup .left {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background: url(../../../public/assets/images/main\ bg.svg) center no-repeat;
+    background-size: cover;
+  }
+  .signup .left .overlay {
+    gap: 133px;
+    padding: 20px 50px;
+  }
+  .signup .left .overlay .content {
+    text-align: left;
+    position: relative;
+    width: 100%;
+  }
+  .signup .left .overlay .content .qut {
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    font-size: 96px;
+    font-family: Gayathri;
+    color: rgb(0, 218, 247);
+  }
+  .signup .left .overlay .content::after {
+    content: "";
+    border-width: 8px 20px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: -145px;
+    right: 40px;
+  }
+  .signup .left .overlay .content::before {
+    content: "";
+    position: absolute;
+    border-width: 12px 8px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    bottom: -130px;
+    right: 40px;
+  }
+  .signup .login-form {
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    padding: 75px 25px;
+  }
+  .signup .login-form .header {
+    text-align: center;
+  }
+  .signup .login-form .header .backBtn {
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+  }
+  .signup .login-form .header .t__body2 {
+    width: 80%;
+    margin: auto;
+  }
+  .signup .login-form .form form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: auto;
+  }
+  .signup .login-form .form form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+  }
+  .signup .login-form .form form .form-group a {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

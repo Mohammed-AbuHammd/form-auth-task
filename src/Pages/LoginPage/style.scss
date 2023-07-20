@@ -1,0 +1,310 @@
+@font-face {
+    font-family: Gayathri;
+    src: url(../../../public/assets/fonts/Gayathri-Bold.ttf);
+}
+
+.login-page {
+    padding: 68px 0;
+    height: 1024px;
+    display: flex;
+    justify-content: space-between;
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        gap: 243px;
+        width: 473px;
+        text-align: left;
+
+        .boxContent {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 19px;
+
+            .t__body1-i {
+                width: 423px;
+            }
+
+            #qut {
+                position: absolute;
+                font-size: 96px;
+                font-family: Gayathri;
+                top: -40px;
+                color: rgba(186, 186, 186, 1);
+
+            }
+
+            .t__h3 {
+                margin-top: 46px;
+            }
+
+
+            .image {
+                width: 550px;
+                display: flex;
+                justify-content: space-between;
+
+
+            }
+        }
+    }
+
+    .login-form {
+        margin-top: 78px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .social-icons {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+
+                .icon {
+                    position: relative;
+                    width: 65px;
+                    height: 65px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #fff;
+                    border-radius: 6px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+                    font-size: 35px;
+                    transition: .5s;
+                    z-index: 1;
+                    overflow: hidden;
+
+                    &:hover {
+                        .ic {
+                            transform: rotateY(360deg);
+                            transition: 0.9s;
+                        }
+
+                    }
+
+                    .twitter {
+                        color: #55acee;
+
+                    }
+
+                    .linkedin {
+                        color: rgba(14, 118, 168, 1);
+
+                    }
+
+                    &:hover {
+                        .twitter {
+                            color: #fff;
+                        }
+
+                        .linkedin {
+                            color: #fff;
+                        }
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 6px;
+                        transform: scale(.9);
+                        z-index: -1;
+                        transition: .9s;
+
+                    }
+
+                    &:nth-child(1) {
+                        &:hover::after {
+                            background: rgba(220, 222, 223, 0.75);
+                        }
+
+                    }
+
+                    &:nth-child(2) {
+                        &:hover::after {
+                            background: #55acee;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        &:hover::after {
+                            background: rgba(14, 118, 168, 1);
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        &:hover::after {
+                            background: rgba(163, 163, 163, 0.25);
+                        }
+                    }
+
+                    &:hover::after {
+                        top: 0;
+                    }
+
+
+                }
+
+            
+            }
+
+            .hr {
+                color: rgba(186, 186, 186, 1);
+
+                ::after {
+                    content: "";
+                    width: 120px;
+                    height: 1px;
+                    background-color: rgba(245, 245, 245, 1);
+                    display: inline-block;
+                    margin-left: 40px;
+                }
+
+                ::before {
+                    content: "";
+                    width: 120px;
+                    height: 1px;
+                    background-color: rgba(245, 245, 245, 1);
+                    display: inline-block;
+                    margin-right: 40px;
+                }
+            }
+        }
+
+        .form {
+            form {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                gap: 30px;
+
+                .form-group {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    position: relative;
+                    .btn-toggle{
+                        position: absolute;
+                        right: 5%;
+                        top: 50%;
+                        border: 0;
+                        outline: 0;
+                        background-color: #fff;
+                        transform: translateY(20%);
+                        color: rgba(21, 101, 216, 1);
+                        font-weight: bolder;
+                        font-size: 20px;
+                    }
+                }
+
+                .label {
+                    text-align: center;
+
+                    a {
+                        text-decoration: none;
+                        color: rgba(21, 101, 216, 1);
+                        cursor: pointer;
+                        transition: 0.3s;
+
+                        &:hover {
+                            text-decoration: underline;
+                            color: rgba(21, 101, 216, 0.8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1099px) {
+    .login-page {
+        padding: 40px 0;
+        height: auto;
+        flex-direction: column;
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            width: 100%;
+            text-align: left;
+
+            .boxContent {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 19px;
+
+
+                .image {
+                    width: auto;
+                    flex-direction: column;
+
+                    img {
+                        margin-left: 50px;
+                    }
+                }
+            }
+        }
+
+        .login-form {
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+            .header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                text-align: center;
+                .content {
+                    font-size: 18px;
+
+                }
+                .social-icons {
+                    display: flex;
+                    justify-content: center;
+                    align-items: a;
+                    gap: 20px;
+                    .icon {
+                        width: 45px;
+                        height: 45px;
+                        font-size: 25px;
+                    }
+                }
+                .hr {
+                    ::after ,::before {
+                        width: 80px;
+                    }
+                }
+            }
+            .form {
+                margin: auto;
+                form {
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

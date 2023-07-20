@@ -1,0 +1,74 @@
+.t__h1 {
+  font-size: 42px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+
+.t__h2 {
+  font-size: 30px;
+  line-height: 36.31px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+
+.t__h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(105, 111, 121);
+}
+
+.t__body1 {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  line-height: 38px;
+  word-spacing: 2px;
+  margin-left: 20px;
+}
+
+.t__body1-i {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(105, 111, 121);
+  line-height: 38px;
+  font-style: italic;
+}
+
+.t__body2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(134, 146, 166);
+  line-height: 28px;
+}
+
+.t__err {
+  color: rgb(159, 22, 22);
+  background-color: rgb(247, 227, 227);
+  padding: 8px 15px;
+  width: 426px;
+  font-weight: normal;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+@media (max-width: 560px) {
+  .t__err {
+    width: 320px;
+  }
+}
+.t__label {
+  font-weight: 500;
+  color: rgb(105, 111, 121);
+  font-size: 16px;
+  line-height: 19.36px;
+}
+
+@media (max-width: 767px) {
+  .t__h1 {
+    font-size: 32px;
+  }
+  .t__h2 {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

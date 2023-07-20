@@ -1,0 +1,34 @@
+input {
+  border: 1px solid rgb(134, 146, 166);
+  border-radius: 6px;
+  width: 426px;
+  height: 64px;
+  padding: 0 30px;
+}
+
+input[type=submit] {
+  background-color: rgb(21, 101, 216);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+input[type=submit]:hover {
+  background-color: rgb(31, 131, 226);
+}
+
+@media (max-width: 560px) {
+  input {
+    width: 320px;
+    height: 45px;
+  }
+}
+::-moz-placeholder {
+  color: rgb(134, 146, 166);
+  font-weight: 500;
+  font-size: 14px;
+}
+::placeholder {
+  color: rgb(134, 146, 166);
+  font-weight: 500;
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,271 @@
+@font-face {
+    font-family: Gayathri;
+    src: url(../../../public/assets/fonts/Gayathri-Bold.ttf);
+}
+
+.signup {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+
+    .left {
+        position: relative;
+        width: 660px;
+        height: 100vh;
+        background: url(../../../public/assets/images/main\ bg.svg) center bottom no-repeat;
+        background-size: cover;
+
+        .overlay {
+
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 160px;
+            padding: 61px 89px;
+
+            .content {
+                text-align: left;
+                position: relative;
+                width: 470px;
+
+                .qut {
+                    position: absolute;
+                    top: -25px;
+                    left: 10px;
+                    font-size: 96px;
+                    font-family: Gayathri;
+                    color: rgba(0, 218, 247, 1);
+                }
+
+                &::after {
+                    content: "";
+                    border-width: 8px 20px;
+                    border-style: solid;
+                    border-color: rgba(255, 255, 255, 1);
+                    position: absolute;
+                    bottom: -145px;
+                    right: 40px;
+                }
+
+                &::before {
+
+                    content: "";
+                    position: absolute;
+                    border-width: 12px 8px;
+                    border-style: solid;
+                    border-color: rgba(255, 255, 255, 1);
+                    bottom: -130px;
+                    right: 40px;
+
+                }
+            }
+
+        }
+    }
+
+    .login-form {
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 660px);
+        gap: 50px;
+        padding: 150px 0 75px 0;
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: left;
+            position: relative;
+
+            .backBtn {
+                display: flex;
+                gap: 25px;
+                position: absolute;
+                top: -100px;
+                left: -100px;
+            }
+
+            .t__body2 {
+                width: 350px;
+            }
+
+        }
+
+        .form {
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                .form-group {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    text-align: left;
+                    position: relative;
+                    i{
+                        position: absolute;
+                        top: 50px;
+                        right: 25px;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        width: 426px;
+                        height: 64px;
+                        border-radius: 6px;
+                        background-color: rgba(255, 255, 255, 1);
+                        color: #000;
+                        text-align: center;
+                        line-height: 64px;
+                        cursor: pointer;
+                        border: 0;
+                        transition: 0.3s linear;
+                        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.08);
+
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.08);
+                            box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.08);
+                        }
+
+                    }
+
+                }
+
+                .form-checkbox {
+                    label {
+                        font-weight: 500;
+                        color: rgba(105, 111, 121, 1);
+                        font-size: 16px;
+                        line-height: 19.36px;
+                        display: flex;
+                        justify-content: flex-start;
+                        gap: 10px;
+                        text-align: left;
+                        align-items: center;
+                        margin-bottom: 15px;
+
+                        input {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1000px) {
+
+    .signup {
+        flex-direction: column;
+        height: auto;
+
+        .left {
+            position: relative;
+            width: 100%;
+            height: 900px;
+            background: url(../../../public/assets/images/main\ bg.svg) center no-repeat;
+            background-size: cover;
+
+            .overlay {
+                gap: 133px;
+                padding: 20px 50px;
+
+                .content {
+                    text-align: left;
+                    position: relative;
+                    width: 100%;
+
+                    .qut {
+                        position: absolute;
+                        top: -25px;
+                        left: 10px;
+                        font-size: 96px;
+                        font-family: Gayathri;
+                        color: rgba(0, 218, 247, 1);
+                    }
+
+                    &::after {
+                        content: "";
+                        border-width: 8px 20px;
+                        border-style: solid;
+                        border-color: rgba(255, 255, 255, 1);
+                        position: absolute;
+                        bottom: -145px;
+                        right: 40px;
+                    }
+
+                    &::before {
+
+                        content: "";
+                        position: absolute;
+                        border-width: 12px 8px;
+                        border-style: solid;
+                        border-color: rgba(255, 255, 255, 1);
+                        bottom: -130px;
+                        right: 40px;
+
+                    }
+                }
+
+            }
+        }
+
+        .login-form {
+            overflow: hidden;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 30px;
+            padding: 75px 25px;
+
+            .header {
+                text-align: center;
+
+                .backBtn {
+                    display: flex;
+                    gap: 25px;
+                    position: absolute;
+                    top: -100px;
+                    left: -100px;
+                }
+
+                .t__body2 {
+                    width: 80%;
+                    margin: auto;
+                }
+
+            }
+
+            .form {
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+                    height: auto;
+
+                    .form-group {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        text-align: left;
+
+                        a {
+                            width: 100%;
+    
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
