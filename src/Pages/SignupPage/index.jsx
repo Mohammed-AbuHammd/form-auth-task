@@ -4,6 +4,8 @@ import Typography from "../../components/Typography";
 import Images from "../../components/Images";
 import { Icon } from "@iconify/react";
 import Input from "../../components/Input";
+import { Link } from 'react-router-dom';
+
 
 import "./style.css";
 
@@ -363,7 +365,9 @@ export default class SignupPage extends Component {
               </div>
 
               <div className="form-group">
-                <a href="../LoginPage/index.jsx">Login</a>
+                {/* <a href="../LoginPage/index.jsx">Login</a> */}
+                <Link to="/login">Login</Link>
+
               </div>
             </form>
           </div>

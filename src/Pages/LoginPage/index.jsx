@@ -4,6 +4,8 @@ import Container from "../../components/Container";
 import Typography from "../../components/Typography";
 import Images from "../../components/Images";
 import Input from "../../components/Input";
+import { Link } from 'react-router-dom';
+
 import "./style.css";
 export default class TestClass extends Component {
   state = {
@@ -169,7 +171,9 @@ export default class TestClass extends Component {
                   <div className="label">
                     <Typography variant="label">
                       Don’t have an account?{" "}
-                      <a href="../SignupPage/index.jsx">Register</a>
+                      <Link to="/">Register</Link>
+
+                      {/* <a href="../SignupPage/index.jsx">Register</a> */}
                     </Typography>
                   </div>
                 </form>
